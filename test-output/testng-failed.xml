@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_04_Registering_Single_patient">
+      <class name="testCases.TC_05_RegisteringPatients_ExcelSheet">
         <methods>
           <include name="setUp"/>
-          <include name="registertingPatient"/>
           <include name="tearDown"/>
+          <include name="registeringPatient" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC_04_Registering_Single_patient -->
+      </class> <!-- testCases.TC_05_RegisteringPatients_ExcelSheet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
