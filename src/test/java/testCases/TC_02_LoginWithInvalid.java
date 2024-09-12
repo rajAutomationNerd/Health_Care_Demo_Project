@@ -1,5 +1,6 @@
 package testCases;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,6 +13,7 @@ public class TC_02_LoginWithInvalid extends B_class{
 	@Test
 	public void loginTestInvalid()
 	{
+		 WebDriver driver = B_class.getDriver();
 		loginPage lp= new loginPage(driver);
 		lp.user("Admin");
 		lp.pass("Rajkumar");

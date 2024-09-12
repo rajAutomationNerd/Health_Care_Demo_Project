@@ -1,5 +1,6 @@
 package testCases;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -27,6 +28,7 @@ public class TC_04_Registering_Patient_DataProvider extends B_class {
 
     @Test(dataProvider = "patientDataProvider")
     public void registeringPatient(String firstName, String lastName, String gender, String day, String month, String year, String address, String postalCode, String phoneNumber) {
+    	 WebDriver driver = B_class.getDriver();
         loginPage lp = new loginPage(driver);
         lp.user("Admin");
         lp.pass("Admin123");
